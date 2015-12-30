@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="FriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNw-hv-5ym">
+                        <rect key="frame" x="8" y="8" width="79" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SNw-hv-5ym" secondAttribute="height" multiplier="79:81" id="nhe-4m-tjx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caM-FM-5VK">
+                        <rect key="frame" x="95" y="8" width="133" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hci-zd-5fc">
+                        <rect key="frame" x="270" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-gd-IYT">
+                        <rect key="frame" x="95" y="59" width="203" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SNw-hv-5ym" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2Ef-N5-H6L"/>
+                    <constraint firstAttribute="trailing" secondItem="kvc-gd-IYT" secondAttribute="trailing" constant="22" id="3ef-AQ-H3g"/>
+                    <constraint firstItem="hci-zd-5fc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7d4-Nh-2BC"/>
+                    <constraint firstAttribute="bottom" secondItem="SNw-hv-5ym" secondAttribute="bottom" constant="8" id="CUx-8H-gFl"/>
+                    <constraint firstItem="kvc-gd-IYT" firstAttribute="top" secondItem="hci-zd-5fc" secondAttribute="bottom" constant="30" id="Cha-2s-gpQ"/>
+                    <constraint firstItem="caM-FM-5VK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="J4h-xb-H1P"/>
+                    <constraint firstItem="kvc-gd-IYT" firstAttribute="top" secondItem="caM-FM-5VK" secondAttribute="bottom" constant="30" id="JUF-An-I2F"/>
+                    <constraint firstAttribute="bottom" secondItem="kvc-gd-IYT" secondAttribute="bottom" constant="17" id="MnT-0y-V2W"/>
+                    <constraint firstItem="SNw-hv-5ym" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Oo7-y5-6Gp"/>
+                    <constraint firstAttribute="trailing" secondItem="hci-zd-5fc" secondAttribute="trailing" constant="8" id="R4B-pp-8nJ"/>
+                    <constraint firstItem="caM-FM-5VK" firstAttribute="leading" secondItem="SNw-hv-5ym" secondAttribute="trailing" constant="8" id="TUT-5T-nYA"/>
+                    <constraint firstItem="kvc-gd-IYT" firstAttribute="leading" secondItem="SNw-hv-5ym" secondAttribute="trailing" constant="8" id="ktY-AB-tYY"/>
+                    <constraint firstItem="kvc-gd-IYT" firstAttribute="top" secondItem="hci-zd-5fc" secondAttribute="bottom" constant="30" id="kyi-UE-dYR"/>
+                    <constraint firstItem="kvc-gd-IYT" firstAttribute="leading" secondItem="SNw-hv-5ym" secondAttribute="trailing" constant="8" id="xmI-bT-fL7"/>
+                    <constraint firstItem="hci-zd-5fc" firstAttribute="leading" secondItem="caM-FM-5VK" secondAttribute="trailing" constant="42" id="zKj-ma-Hll"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="QQLabel" destination="kvc-gd-IYT" id="vmj-nk-6ya"/>
+                <outlet property="portraitImageView" destination="SNw-hv-5ym" id="XLK-K9-K5g"/>
+                <outlet property="sexLabel" destination="hci-zd-5fc" id="oBc-mU-7qN"/>
+                <outlet property="userNameLabel" destination="caM-FM-5VK" id="NFf-FA-zTg"/>
+            </connections>
+            <point key="canvasLocation" x="484" y="423"/>
+        </tableViewCell>
+    </objects>
+</document>

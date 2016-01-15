@@ -91,9 +91,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
     self.conversationListTableView.tableFooterView = [UIView new];
-    
 }
 #pragma mark
 #pragma mark 禁止右滑删除
@@ -103,13 +101,11 @@
 //左滑删除
 -(void)rcConversationListTableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     //可以从数据库删除数据
-    if (indexPath.row < self.conversationListDataSource.count) {
         RCConversationModel *model = self.conversationListDataSource[indexPath.row];
         [[RCIMClient sharedRCIMClient] removeConversation:model.conversationType targetId:model.targetId];
         [self.conversationListDataSource removeObjectAtIndex:indexPath.row];
         [self.conversationListTableView reloadData];
-//        [[RCDataManager shareManager] refreshBadgeValue];
-    }
+        [[RCDataManager shareManager] refreshBadgeValue];
 }
 //高度
 -(CGFloat)rcConversationListTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -130,7 +126,6 @@
     NSDateFormatter *formatDay = [[NSDateFormatter alloc] init];
     formatDay.dateFormat = @"yyyyMMdd";
     NSString *dayStr = [formatDay stringFromDate:now];
-    
     return dayStr;
     
 }
@@ -139,7 +134,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *destDateString = [dateFormatter stringFromDate:date];
-    
     return destDateString;
 }
 #pragma mark
@@ -148,13 +142,34 @@
          conversationModel:(RCConversationModel *)model
                atIndexPath:(NSIndexPath *)indexPath{
     //点击cell，拿到cell对应的model，然后从model中拿到对应的RCUserInfo，然后赋值会话属性，进入会话
-    WMConversationViewController *_conversationVC = [[WMConversationViewController alloc]init];
-    _conversationVC.conversationType = model.conversationType;
-    _conversationVC.targetId = model.targetId;
-    RCUserInfo *aUserInfo = [[RCDataManager shareManager] currentUserInfoWithUserId:model.targetId];
-    _conversationVC.userName = aUserInfo.name;
-    _conversationVC.title =aUserInfo.name;
-    [self.navigationController pushViewController:_conversationVC animated:YES];
+    
+    if (model.conversationType==ConversationType_PRIVATE) {//单聊
+        WMConversationViewController *_conversationVC = [[WMConversationViewController alloc]init];
+        _conversationVC.conversationType = model.conversationType;
+        _conversationVC.targetId = model.targetId;
+        RCUserInfo *aUserInfo = [[RCDataManager shareManager] currentUserInfoWithUserId:model.targetId];
+        _conversationVC.title =aUserInfo.name;
+        [self.navigationController pushViewController:_conversationVC animated:YES];
+        
+    }else if (model.conversationType==ConversationType_GROUP){//群聊
+        WMConversationViewController *_conversationVC = [[WMConversationViewController alloc]init];
+        _conversationVC.conversationType = model.conversationType;
+        _conversationVC.targetId = model.targetId;
+        _conversationVC.title = model.conversationTitle;
+        [self.navigationController pushViewController:_conversationVC animated:YES];
+    }else if (model.conversationType==ConversationType_DISCUSSION){//讨论组
+        WMConversationViewController *_conversationVC = [[WMConversationViewController alloc]init];
+        _conversationVC.conversationType = model.conversationType;
+        _conversationVC.targetId = model.targetId;
+        _conversationVC.title = model.conversationTitle;
+        [self.navigationController pushViewController:_conversationVC animated:YES];
+    }else if (model.conversationType==ConversationType_CHATROOM){//聊天室
+        
+    }else if (model.conversationType==ConversationType_APPSERVICE){//客服
+        
+    }
+    
+   
 }
 -(RCConversationBaseCell *)rcConversationListTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.conversationListDataSource.count&&indexPath.row < self.conversationListDataSource.count) {

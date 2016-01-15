@@ -1,15 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscussionViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="yxX-di-4jz"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vau-Az-3x7">
+                    <rect key="frame" x="100" y="115" width="400" height="42"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="height" multiplier="200:21" id="0y5-v6-5aG"/>
+                        <constraint firstAttribute="width" constant="400" id="QmV-gt-qx4"/>
+                        <constraint firstAttribute="height" constant="42" id="Yfy-Uo-HBb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="创建一个讨论组">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0y5-v6-5aG"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="createDiscussionAction:" destination="-1" eventType="touchUpInside" id="YVM-1J-kqq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-J8-1bb">
+                    <rect key="frame" x="100" y="177" width="400" height="42"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LiT-J8-1bb" secondAttribute="height" multiplier="200:21" id="j4D-6k-aAW"/>
+                        <constraint firstAttribute="width" constant="400" id="n5m-S5-wVV"/>
+                        <constraint firstAttribute="height" constant="42" id="uxg-Jb-Rx5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="把全部好友加进讨论组">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="j4D-6k-aAW"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="addMemberAction:" destination="-1" eventType="touchUpInside" id="nPu-tg-AVg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-pu-FCF">
+                    <rect key="frame" x="100" y="239" width="400" height="42"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="MZP-nn-KLZ"/>
+                        <constraint firstAttribute="width" constant="400" id="VwJ-tm-S57"/>
+                        <constraint firstAttribute="width" secondItem="Efc-pu-FCF" secondAttribute="height" multiplier="200:21" id="llO-to-EH8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="把某人T出讨论组">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="llO-to-EH8"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="removeMemberAction:" destination="-1" eventType="touchUpInside" id="r5H-0T-bCc"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="leading" secondItem="vau-Az-3x7" secondAttribute="leading" id="69M-xu-HY7"/>
+                <constraint firstAttribute="trailing" secondItem="Efc-pu-FCF" secondAttribute="trailing" constant="100" id="6M4-ZI-91l"/>
+                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="100" id="7ye-kw-k6c"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="Fnj-4y-VHw"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="leading" secondItem="vau-Az-3x7" secondAttribute="leading" id="H6H-a2-LwK"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="KZB-H3-Q4p"/>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="width" id="NPR-kR-lEH"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="top" secondItem="vau-Az-3x7" secondAttribute="bottom" constant="20" id="R13-KF-T5R"/>
+                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="100" id="SoU-ya-LoT"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="115" id="Tdh-zw-CTy"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="width" id="Xpn-1o-lRX"/>
+                <constraint firstAttribute="trailing" secondItem="LiT-J8-1bb" secondAttribute="trailing" constant="100" id="dOi-yG-td5"/>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="top" secondItem="LiT-J8-1bb" secondAttribute="bottom" constant="20" id="e7a-lQ-HHv"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="height" secondItem="vau-Az-3x7" secondAttribute="height" id="fKu-Mi-C1p"/>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="nZf-mr-BQF"/>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="height" secondItem="vau-Az-3x7" secondAttribute="height" id="pPM-I7-IOX"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="rYW-sm-9Q0"/>
+            </constraints>
+            <point key="canvasLocation" x="572" y="529"/>
         </view>
     </objects>
 </document>

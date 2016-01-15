@@ -32,13 +32,18 @@
     });
     return manager;
 }
-
+/**
+ *  从服务器同步好友列表
+ */
 -(void)syncFriendList:(void (^)(NSMutableArray* friends,BOOL isSuccess))completion
 {
     dataSoure = [[NSMutableArray alloc]init];
 
-    for (NSInteger i = 2; i<7; i++) {
-        if (i==2) {
+    for (NSInteger i = 1; i<7; i++) {
+        if(i==1){
+            RCUserInfo *aUserInfo =[[RCUserInfo alloc]initWithUserId:[NSString stringWithFormat:@"%ld",i] name:@"文明" portrait:@"http://weixin.ihk.cn/ihkwx_upload/fodder/20151210/1449727866527.jpg" QQ:@"740747055" sex:@"男"];
+            [dataSoure addObject:aUserInfo];
+        }else if (i==2) {
           RCUserInfo *aUserInfo =[[RCUserInfo alloc]initWithUserId:[NSString stringWithFormat:@"%ld",i] name:@"张全蛋" portrait:@"http://weixin.ihk.cn/ihkwx_upload/fodder/20151210/1449727755947.jpg" QQ:@"张全蛋的QQ信息" sex:@"男"];
             [dataSoure addObject:aUserInfo];
         }else if(i==3){
@@ -61,16 +66,54 @@
         
         
     }
+
     [AppDelegate shareAppDelegate].friendsArray = dataSoure;
     completion(dataSoure,YES);
 
 }
+/**
+ *  从服务器同步群组列表
+ */
+-(void) syncGroupList:(void (^)(NSMutableArray * groups,BOOL isSuccess))completion{
+    if ([AppDelegate shareAppDelegate].groupsArray.count) {
+        [[AppDelegate shareAppDelegate].groupsArray removeAllObjects];
+    }
+    for (NSInteger i = 1; i<4; i++) {
+        if (i==1) {
+            RCGroup *aGroup = [[RCGroup alloc]initWithGroupId:[NSString stringWithFormat:@"%ld",i] groupName:@"斧头帮" portraitUri:@"http://farm2.staticflickr.com/1709/24157242566_98d0192315_m.jpg"];
+            [[AppDelegate shareAppDelegate].groupsArray addObject:aGroup];
+            
+        }else if (i==2){
+            RCGroup *aGroup = [[RCGroup alloc]initWithGroupId:[NSString stringWithFormat:@"%ld",i] groupName:@"丐帮" portraitUri:@"http://farm2.staticflickr.com/1715/23815656639_ef86cf1498_m.jpg"];
+            [[AppDelegate shareAppDelegate].groupsArray addObject:aGroup];
+            
+        }else if (i==3){
+            RCGroup *aGroup = [[RCGroup alloc]initWithGroupId:[NSString stringWithFormat:@"%ld",i] groupName:@"青龙帮" portraitUri:@"http://farm2.staticflickr.com/1455/23888379640_edf9fce919_m.jpg"];
+            [[AppDelegate shareAppDelegate].groupsArray addObject:aGroup];
+        }
+    }
+    completion([AppDelegate shareAppDelegate].groupsArray,YES);
+
+}
+#pragma mark
+#pragma mark 根据userId获取RCUserInfo
 -(RCUserInfo *)currentUserInfoWithUserId:(NSString *)userId{
     for (NSInteger i = 0; i<[AppDelegate shareAppDelegate].friendsArray.count; i++) {
         RCUserInfo *aUser = [AppDelegate shareAppDelegate].friendsArray[i];
         if ([userId isEqualToString:aUser.userId]) {
             NSLog(@"current ＝ %@",aUser.name);
             return aUser;
+        }
+    }
+    return nil;
+}
+#pragma mark
+#pragma mark 根据userId获取RCGroup
+-(RCGroup *)currentGroupInfoWithGroupId:(NSString *)groupId{
+    for (NSInteger i = 0; i<[AppDelegate shareAppDelegate].groupsArray.count; i++) {
+        RCGroup *aGroup = [AppDelegate shareAppDelegate].groupsArray[i];
+        if ([groupId isEqualToString:aGroup.groupId]) {
+            return aGroup;
         }
     }
     return nil;
@@ -85,6 +128,7 @@
     }
     return nil;
 }
+#pragma mark
 #pragma mark - RCIMUserInfoDataSource
 - (void)getUserInfoWithUserId:(NSString*)userId completion:(void (^)(RCUserInfo*))completion
 {
@@ -103,25 +147,44 @@
     if ([userId isEqualToString:[RCIM sharedRCIM].currentUserInfo.userId]) {
         RCUserInfo *myselfInfo = [[RCUserInfo alloc]initWithUserId:[RCIM sharedRCIM].currentUserInfo.userId name:[RCIM sharedRCIM].currentUserInfo.name portrait:[RCIM sharedRCIM].currentUserInfo.portraitUri QQ:[RCIM sharedRCIM].currentUserInfo.QQ sex:[RCIM sharedRCIM].currentUserInfo.sex];
         completion(myselfInfo);
+        
     }
     
     for (NSInteger i = 0; i<[AppDelegate shareAppDelegate].friendsArray.count; i++) {
         RCUserInfo *aUser = [AppDelegate shareAppDelegate].friendsArray[i];
         if ([userId isEqualToString:aUser.userId]) {
             completion(aUser);
+            break;
         }
     }
 }
--(void)loginRongCloudWithUserInfo:(RCUserInfo *)userInfo{
-                [[RCIM sharedRCIM] connectWithToken:@"YPZX96tteXrJBkOq4137oMiB84K4U91I4g4lR+rfSMxb1+MTtN6Qs+CBmQsA0oXoplkjb+XpS8E1/ycNRHY7Iw==" success:^(NSString *userId) {
+#pragma mark
+#pragma mark - RCIMGroupInfoDataSource
+- (void)getGroupInfoWithGroupId:(NSString *)groupId
+                     completion:(void (^)(RCGroup *groupInfo))completion{
+    for (NSInteger i = 0; i<[AppDelegate shareAppDelegate].groupsArray.count; i++) {
+        RCGroup *aGroup = [AppDelegate shareAppDelegate].groupsArray[i];
+        if ([groupId isEqualToString:aGroup.groupId]) {
+            completion(aGroup);
+            break;
+        }
+    }
+}
+-(void)loginRongCloudWithUserInfo:(RCUserInfo *)userInfo withToken:(NSString *)token{
+                [[RCIM sharedRCIM] connectWithToken:token success:^(NSString *userId) {
                     [RCIM sharedRCIM].globalNavigationBarTintColor = [UIColor redColor];
                     NSLog(@"login success with userId %@",userId);
                     //同步好友列表
                     [self syncFriendList:^(NSMutableArray *friends, BOOL isSuccess) {
                         NSLog(@"%@",friends);
                         if (isSuccess) {
-                            NSLog(@" success 发送通知");
-                            [[NSNotificationCenter defaultCenter] postNotificationName:@"alreadyLogin" object:nil];
+                            [self syncGroupList:^(NSMutableArray *groups, BOOL isSuccess) {
+                                if (isSuccess) {
+                                    NSLog(@" success 发送通知");
+                                    [[NSNotificationCenter defaultCenter] postNotificationName:@"alreadyLogin" object:nil];
+                                }
+                            }];
+                           
                         }
                     }];
                     
@@ -144,14 +207,14 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
+        NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION),@(ConversationType_GROUP),@(ConversationType_CHATROOM)]];
+
         
-        NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE)]];
-        UINavigationController  *chatNav = [AppDelegate shareAppDelegate].tabbarVC.viewControllers[0];
+        UINavigationController  *chatNav = [AppDelegate shareAppDelegate].tabbarVC.viewControllers[1];
         if (unreadMsgCount == 0) {
             chatNav.tabBarItem.badgeValue = nil;
         }else{
             chatNav.tabBarItem.badgeValue = [NSString stringWithFormat:@"%li",(long)unreadMsgCount];
-            
         }
     });
 }

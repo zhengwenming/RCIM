@@ -10,12 +10,14 @@
 #import <RongIMKit/RongIMKit.h>
 #import "RootTabbarViewController.h"
 #import "RCDataManager.h"
+#import "WMUtil.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) NSMutableArray *groupList;
 @property (nonatomic, retain)RootTabbarViewController *tabbarVC;
 @property(nonatomic,retain) NSMutableArray *friendsArray;
+@property(nonatomic,retain) NSMutableArray *groupsArray;
 
 /// func
 + (AppDelegate* )shareAppDelegate;

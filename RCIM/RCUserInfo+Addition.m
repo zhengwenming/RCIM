@@ -28,8 +28,8 @@
 }
 
 //添加属性扩展set方法
-char* const QQ = "QQ";
-char* const SEX = "SEX";
+static char* const QQ = "QQ";
+static char* const SEX = "SEX";
 
 -(void)setQQ:(NSString *)newQQ{
     

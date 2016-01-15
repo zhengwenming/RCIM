@@ -22,9 +22,12 @@
 -(void)initRongClould{
     // 初始化 SDK，传入 AppKey
     self.friendsArray = [[NSMutableArray alloc]init];
-    
+    self.groupsArray = [[NSMutableArray alloc]init];
     [[RCIM sharedRCIM] initWithAppKey:@"3argexb6r2b5e"];
+    //设置用户信息提供者为 [RCDataManager shareManager]
     [RCIM sharedRCIM].userInfoDataSource = [RCDataManager shareManager];
+    //设置群组信息提供者为 [RCDataManager shareManager]
+    [RCIM sharedRCIM].groupInfoDataSource = [RCDataManager shareManager];
     [RCIM sharedRCIM].enableMessageAttachUserInfo = YES;
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

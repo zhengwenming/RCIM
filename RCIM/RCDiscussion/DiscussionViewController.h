@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DiscussionViewController : UIViewController
-
+@property (nonatomic, retain)NSString *discussionId;
 @end

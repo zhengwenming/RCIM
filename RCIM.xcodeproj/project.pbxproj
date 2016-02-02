@@ -47,6 +47,7 @@
 		7083EDC51C33B0E60016D355 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7083EDB01C33B0E60016D355 /* UIImageView+WebCache.m */; };
 		7083EDC61C33B0E60016D355 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7083EDB21C33B0E60016D355 /* UIView+WebCacheOperation.m */; };
 		7083EDCE1C33BF400016D355 /* RCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7083EDCD1C33BF400016D355 /* RCCustomCell.m */; };
+		70A0785C1C609E8500F8C188 /* RCIM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70A0785B1C609E8500F8C188 /* RCIM.gif */; };
 		70AD71BD1C48B61200F3D493 /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AD71BB1C48B61200F3D493 /* FriendsListViewController.m */; };
 		70AD71BE1C48B61200F3D493 /* FriendsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70AD71BC1C48B61200F3D493 /* FriendsListViewController.xib */; };
 		70AD71C21C48B88700F3D493 /* PersonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AD71C01C48B88700F3D493 /* PersonCenterViewController.m */; };
@@ -190,6 +191,7 @@
 		7083EDB21C33B0E60016D355 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		7083EDCC1C33BF400016D355 /* RCCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCustomCell.h; sourceTree = "<group>"; };
 		7083EDCD1C33BF400016D355 /* RCCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCustomCell.m; sourceTree = "<group>"; };
+		70A0785B1C609E8500F8C188 /* RCIM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RCIM.gif; sourceTree = "<group>"; };
 		70AD71BA1C48B61200F3D493 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
 		70AD71BB1C48B61200F3D493 /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
 		70AD71BC1C48B61200F3D493 /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsListViewController.xib; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 			children = (
 				70CA66801C43B7A6003D9FF9 /* DefaultHeader@2x.png */,
 				70CA66811C43B7A6003D9FF9 /* DefaultHeader@3x.png */,
+				70A0785B1C609E8500F8C188 /* RCIM.gif */,
 				70CA66821C43B7A6003D9FF9 /* zwm.png */,
 			);
 			path = images;
@@ -719,6 +722,7 @@
 				70CA669F1C43B7A6003D9FF9 /* tab1_selected@2x.png in Resources */,
 				70CA66A81C43B7A6003D9FF9 /* tab3_selected@3x.png in Resources */,
 				70CA66AE1C43B7A6003D9FF9 /* tab4_unselected@3x.png in Resources */,
+				70A0785C1C609E8500F8C188 /* RCIM.gif in Resources */,
 				70CA66AA1C43B7A6003D9FF9 /* tab3_unselected@3x.png in Resources */,
 				70CA66A61C43B7A6003D9FF9 /* tab2_unselected@3x.png in Resources */,
 				70CA66A91C43B7A6003D9FF9 /* tab3_unselected@2x.png in Resources */,
@@ -935,6 +939,7 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_4_2",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,6 +961,7 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_4_2",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

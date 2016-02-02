@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vau-Az-3x7">
-                    <rect key="frame" x="100" y="115" width="400" height="42"/>
+                    <rect key="frame" x="50" y="100" width="400" height="42"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="height" multiplier="200:21" id="0y5-v6-5aG"/>
@@ -38,7 +38,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-J8-1bb">
-                    <rect key="frame" x="100" y="177" width="400" height="42"/>
+                    <rect key="frame" x="50" y="162" width="400" height="42"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="LiT-J8-1bb" secondAttribute="height" multiplier="200:21" id="j4D-6k-aAW"/>
@@ -59,7 +59,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-pu-FCF">
-                    <rect key="frame" x="100" y="239" width="400" height="42"/>
+                    <rect key="frame" x="50" y="224" width="400" height="42"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="MZP-nn-KLZ"/>
@@ -83,24 +83,24 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Efc-pu-FCF" firstAttribute="leading" secondItem="vau-Az-3x7" secondAttribute="leading" id="69M-xu-HY7"/>
-                <constraint firstAttribute="trailing" secondItem="Efc-pu-FCF" secondAttribute="trailing" constant="100" id="6M4-ZI-91l"/>
-                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="100" id="7ye-kw-k6c"/>
-                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="Fnj-4y-VHw"/>
+                <constraint firstAttribute="trailing" secondItem="Efc-pu-FCF" secondAttribute="trailing" constant="50" id="6M4-ZI-91l"/>
+                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="50" id="7ye-kw-k6c"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="Fnj-4y-VHw"/>
                 <constraint firstItem="LiT-J8-1bb" firstAttribute="leading" secondItem="vau-Az-3x7" secondAttribute="leading" id="H6H-a2-LwK"/>
-                <constraint firstItem="LiT-J8-1bb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="KZB-H3-Q4p"/>
+                <constraint firstItem="LiT-J8-1bb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="KZB-H3-Q4p"/>
                 <constraint firstItem="Efc-pu-FCF" firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="width" id="NPR-kR-lEH"/>
                 <constraint firstItem="LiT-J8-1bb" firstAttribute="top" secondItem="vau-Az-3x7" secondAttribute="bottom" constant="20" id="R13-KF-T5R"/>
-                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="100" id="SoU-ya-LoT"/>
-                <constraint firstItem="vau-Az-3x7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="115" id="Tdh-zw-CTy"/>
+                <constraint firstAttribute="trailing" secondItem="vau-Az-3x7" secondAttribute="trailing" constant="50" id="SoU-ya-LoT"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Tdh-zw-CTy"/>
                 <constraint firstItem="LiT-J8-1bb" firstAttribute="width" secondItem="vau-Az-3x7" secondAttribute="width" id="Xpn-1o-lRX"/>
-                <constraint firstAttribute="trailing" secondItem="LiT-J8-1bb" secondAttribute="trailing" constant="100" id="dOi-yG-td5"/>
+                <constraint firstAttribute="trailing" secondItem="LiT-J8-1bb" secondAttribute="trailing" constant="50" id="dOi-yG-td5"/>
                 <constraint firstItem="Efc-pu-FCF" firstAttribute="top" secondItem="LiT-J8-1bb" secondAttribute="bottom" constant="20" id="e7a-lQ-HHv"/>
                 <constraint firstItem="LiT-J8-1bb" firstAttribute="height" secondItem="vau-Az-3x7" secondAttribute="height" id="fKu-Mi-C1p"/>
-                <constraint firstItem="Efc-pu-FCF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="nZf-mr-BQF"/>
+                <constraint firstItem="Efc-pu-FCF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="nZf-mr-BQF"/>
                 <constraint firstItem="Efc-pu-FCF" firstAttribute="height" secondItem="vau-Az-3x7" secondAttribute="height" id="pPM-I7-IOX"/>
-                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="rYW-sm-9Q0"/>
+                <constraint firstItem="vau-Az-3x7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="rYW-sm-9Q0"/>
             </constraints>
-            <point key="canvasLocation" x="572" y="529"/>
+            <point key="canvasLocation" x="583" y="490"/>
         </view>
     </objects>
 </document>

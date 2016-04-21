@@ -106,6 +106,9 @@
 		70CA66AD1C43B7A6003D9FF9 /* tab4_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CA66961C43B7A6003D9FF9 /* tab4_unselected@2x.png */; };
 		70CA66AE1C43B7A6003D9FF9 /* tab4_unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CA66971C43B7A6003D9FF9 /* tab4_unselected@3x.png */; };
 		70CA66B11C43B7DD003D9FF9 /* DiscussionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA66B01C43B7DD003D9FF9 /* DiscussionViewController.m */; };
+		70E0B5BD1CC766AE004A2975 /* WMVideoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0B5BC1CC766AE004A2975 /* WMVideoMessage.m */; };
+		70E0B5C01CC766D7004A2975 /* WMVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0B5BF1CC766D7004A2975 /* WMVideoMessageCell.m */; };
+		70E0B5C21CC769DC004A2975 /* add_ico@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E0B5C11CC769DC004A2975 /* add_ico@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +261,11 @@
 		70CA66971C43B7A6003D9FF9 /* tab4_unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab4_unselected@3x.png"; sourceTree = "<group>"; };
 		70CA66AF1C43B7DD003D9FF9 /* DiscussionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionViewController.h; sourceTree = "<group>"; };
 		70CA66B01C43B7DD003D9FF9 /* DiscussionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionViewController.m; sourceTree = "<group>"; };
+		70E0B5BB1CC766AE004A2975 /* WMVideoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessage.h; sourceTree = "<group>"; };
+		70E0B5BC1CC766AE004A2975 /* WMVideoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoMessage.m; sourceTree = "<group>"; };
+		70E0B5BE1CC766D7004A2975 /* WMVideoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessageCell.h; sourceTree = "<group>"; };
+		70E0B5BF1CC766D7004A2975 /* WMVideoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoMessageCell.m; sourceTree = "<group>"; };
+		70E0B5C11CC769DC004A2975 /* add_ico@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_ico@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +349,10 @@
 			children = (
 				7083ED521C33694B0016D355 /* WMConversationViewController.h */,
 				7083ED531C33694B0016D355 /* WMConversationViewController.m */,
+				70E0B5BB1CC766AE004A2975 /* WMVideoMessage.h */,
+				70E0B5BC1CC766AE004A2975 /* WMVideoMessage.m */,
+				70E0B5BE1CC766D7004A2975 /* WMVideoMessageCell.h */,
+				70E0B5BF1CC766D7004A2975 /* WMVideoMessageCell.m */,
 			);
 			name = "RCConversation会话";
 			path = RCConversation;
@@ -595,6 +607,7 @@
 			children = (
 				70CA66801C43B7A6003D9FF9 /* DefaultHeader@2x.png */,
 				70CA66811C43B7A6003D9FF9 /* DefaultHeader@3x.png */,
+				70E0B5C11CC769DC004A2975 /* add_ico@3x.png */,
 				70A0785B1C609E8500F8C188 /* RCIM.gif */,
 				70CA66821C43B7A6003D9FF9 /* zwm.png */,
 			);
@@ -677,6 +690,11 @@
 				TargetAttributes = {
 					70C6B9871ADE0C8400CC1859 = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					70C6B9A01ADE0C8500CC1859 = {
 						CreatedOnToolsVersion = 6.3;
@@ -718,6 +736,7 @@
 				70CA66981C43B7A6003D9FF9 /* DefaultHeader@2x.png in Resources */,
 				70CA66991C43B7A6003D9FF9 /* DefaultHeader@3x.png in Resources */,
 				70CA66A41C43B7A6003D9FF9 /* tab2_selected@3x.png in Resources */,
+				70E0B5C21CC769DC004A2975 /* add_ico@3x.png in Resources */,
 				70C6B9971ADE0C8400CC1859 /* Main.storyboard in Resources */,
 				70CA669F1C43B7A6003D9FF9 /* tab1_selected@2x.png in Resources */,
 				70CA66A81C43B7A6003D9FF9 /* tab3_selected@3x.png in Resources */,
@@ -771,6 +790,7 @@
 				70CA66B11C43B7DD003D9FF9 /* DiscussionViewController.m in Sources */,
 				7083ED491C3368030016D355 /* RootTabbarViewController.m in Sources */,
 				7083EDB91C33B0E60016D355 /* SDImageCache.m in Sources */,
+				70E0B5C01CC766D7004A2975 /* WMVideoMessageCell.m in Sources */,
 				7083EDB71C33B0E60016D355 /* MKAnnotationView+WebCache.m in Sources */,
 				7083EDC21C33B0E60016D355 /* UIImage+MultiFormat.m in Sources */,
 				7083ED851C33ADCF0016D355 /* FriendCell.m in Sources */,
@@ -798,6 +818,7 @@
 				70CA66751C43B1DD003D9FF9 /* GroupListViewController.m in Sources */,
 				7083ED541C33694B0016D355 /* WMConversationViewController.m in Sources */,
 				7083EDBC1C33B0E60016D355 /* SDWebImageDownloader.m in Sources */,
+				70E0B5BD1CC766AE004A2975 /* WMVideoMessage.m in Sources */,
 				7083EDB51C33B0E60016D355 /* PRTween.m in Sources */,
 				70AD71C21C48B88700F3D493 /* PersonCenterViewController.m in Sources */,
 			);

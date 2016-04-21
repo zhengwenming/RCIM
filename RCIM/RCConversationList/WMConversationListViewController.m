@@ -15,6 +15,7 @@
 #import "RCCustomCell.h"
 #import "UIImageView+WebCache.h"
 #import "LoginViewController.h"
+#import "WMVideoMessage.h"
 @interface WMConversationListViewController ()<RCIMReceiveMessageDelegate,RCIMConnectionStatusDelegate
 ,UIAlertViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -285,6 +286,19 @@
                         }
                     }else{
                         cell.contentLabel.text = [NSString stringWithFormat:@"来自\"%@\"的位置消息，点击查看",userInfo.name];
+                    }
+                }
+                else if ([model.lastestMessage isKindOfClass:[WMVideoMessage class]]){
+                    if ([model.senderUserId isEqualToString:[RCIMClient sharedRCIMClient].currentUserInfo.userId]) {
+                        //我自己发的
+                        RCUserInfo *myselfInfo = [RCIMClient sharedRCIMClient].currentUserInfo;
+                        if ([[NSString stringWithFormat:@"%@",myselfInfo.name] isEqualToString:@""]) {
+                            cell.contentLabel.text = [NSString stringWithFormat:@"来自\"%@\"的视频消息，点击查看",myselfInfo.name];
+                        }else{
+                            cell.contentLabel.text = [NSString stringWithFormat:@"来自\"%@\"的视频消息，点击查看",myselfInfo.name];
+                        }
+                    }else{
+                        cell.contentLabel.text = [NSString stringWithFormat:@"来自\"%@\"的视频消息，点击查看",userInfo.name];
                     }
                 }
                 

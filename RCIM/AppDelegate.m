@@ -10,6 +10,7 @@
 
 
 #import "AppDelegate.h"
+#import "WMVideoMessage.h"
 // 引用 IMKit 头文件。
 // 引用 ViewController 头文件。
 #import "LoginViewController.h"
@@ -29,6 +30,7 @@
     //设置群组信息提供者为 [RCDataManager shareManager]
     [RCIM sharedRCIM].groupInfoDataSource = [RCDataManager shareManager];
     [RCIM sharedRCIM].enableMessageAttachUserInfo = YES;
+    [[RCIM sharedRCIM]registerMessageType:WMVideoMessage.class];
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -77,7 +77,7 @@
 - (void)setAutoLayout {
     WMVideoMessage *_videoMessage = (WMVideoMessage *)self.model.content;
     if (_videoMessage) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://fhcc.85598.com/skin/shipin.mp4"]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://admin.weixin.ihk.cn/ihkwx_upload/test.mp4"]]];
     } else {
         //DebugLog(@”[RongIMKit]: RCMessageModel.content is NOT RCTextMessage object”);
     }

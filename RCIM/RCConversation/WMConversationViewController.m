@@ -47,7 +47,7 @@
             [super pluginBoardView:pluginBoardView clickedItemWithTag:tag];//记得调用super父类的方法
             NSLog(@"shipin");
             //初始化一个视频消息，传进去参数conten，为一个视频的url
-            WMVideoMessage *videoMessage=[WMVideoMessage messageWithContent:@"http://fhcc.85598.com/skin/shipin.mp4"];
+            WMVideoMessage *videoMessage=[WMVideoMessage messageWithContent:@"http://admin.weixin.ihk.cn/ihkwx_upload/test.mp4"];
             //发送消息
             [self sendMessage:videoMessage pushContent:nil];
         }

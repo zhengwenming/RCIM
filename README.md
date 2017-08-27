@@ -1,6 +1,12 @@
 # RCIM(已经更新)
 ##融云SDK集成Demo。单聊！群聊！讨论组！自定义cell，自定义消息！。文章配合代码一起看，效果更佳！
+---
+微信扫码关注文明的iOS开发公众号
+或者微信搜索“iOS开发by文明”
 
+![image](https://github.com/zhengwenming/WMPlayer/blob/master/PlayerDemo/gzh.jpg)
+
+---
 ![image](https://github.com/zhengwenming/RCIM/blob/master/RCIM/Resoures/images/RCIM.gif)
 
 文章Github地址：

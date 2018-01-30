@@ -13,7 +13,7 @@
 https://github.com/zhengwenming/RongCloud-SDK-description
 
 
-注意此demo用的SDK版本为2.4.2   所以你要用Xcode 7来跑这个工程。
+注意此demo用的SDK版本为融云SDK-V2.8.27   所以你要用Xcode 7来跑这个工程。
 
 下面是官方的原话:
 Xcode 版本与 SDK 版本选择

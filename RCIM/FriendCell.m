@@ -15,6 +15,13 @@
 - (void)awakeFromNib {
     // Initialization code
     
+    if (@available(iOS 13.0, *)) {
+        self.userNameLabel.textColor = [UIColor labelColor];
+        self.QQLabel.textColor = [UIColor labelColor];
+        self.sexLabel.textColor = [UIColor labelColor];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

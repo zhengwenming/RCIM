@@ -22,8 +22,12 @@
 @implementation LoginViewController
 
 -(void)alreadyLogin:(NSNotification *)notice{
-    [self presentViewController:[AppDelegate shareAppDelegate].tabbarVC animated:YES completion:^{
-    }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [AppDelegate shareAppDelegate].tabbarVC.modalPresentationStyle = UIModalPresentationFullScreen;
+               [self presentViewController:[AppDelegate shareAppDelegate].tabbarVC animated:YES completion:^{
+               }];
+    });
 }
 -(void)initLoacalTestData{
     dataSource = [[NSMutableArray alloc]init];

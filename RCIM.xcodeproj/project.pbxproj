@@ -15,7 +15,6 @@
 		70202E7620200C96001E73DD /* RongCloudKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6C20200C95001E73DD /* RongCloudKit.strings */; };
 		70202E7720200C96001E73DD /* RongCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6E20200C96001E73DD /* RongCloud.bundle */; };
 		70202E7820200C96001E73DD /* RongIMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70202E6F20200C96001E73DD /* RongIMKit.framework */; };
-		70202E7A20200DD7001E73DD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70202E7920200DD6001E73DD /* Info.plist */; };
 		707AFFA41C4629E600EDBD52 /* MBProgressHUD+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AFF9F1C4629E600EDBD52 /* MBProgressHUD+Show.m */; };
 		707AFFA51C4629E600EDBD52 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 707AFFA01C4629E600EDBD52 /* MBProgressHUD.bundle */; };
 		707AFFA61C4629E600EDBD52 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AFFA21C4629E600EDBD52 /* MBProgressHUD.m */; };
@@ -62,7 +61,6 @@
 		70C6B9971ADE0C8400CC1859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C6B9951ADE0C8400CC1859 /* Main.storyboard */; };
 		70C6B9991ADE0C8400CC1859 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C6B9981ADE0C8400CC1859 /* Images.xcassets */; };
 		70C6B99C1ADE0C8400CC1859 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C6B99A1ADE0C8400CC1859 /* LaunchScreen.xib */; };
-		70C6B9A81ADE0C8500CC1859 /* RCIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C6B9A71ADE0C8500CC1859 /* RCIMTests.m */; };
 		70C6B9C71ADE0D1300CC1859 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C6B9B21ADE0D1300CC1859 /* AudioToolbox.framework */; };
 		70C6B9C81ADE0D1300CC1859 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C6B9B31ADE0D1300CC1859 /* AVFoundation.framework */; };
 		70C6B9C91ADE0D1300CC1859 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C6B9B41ADE0D1300CC1859 /* CFNetwork.framework */; };
@@ -113,16 +111,6 @@
 		70E0B5C01CC766D7004A2975 /* WMVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0B5BF1CC766D7004A2975 /* WMVideoMessageCell.m */; };
 		70E0B5C21CC769DC004A2975 /* add_ico@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E0B5C11CC769DC004A2975 /* add_ico@3x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		70C6B9A21ADE0C8500CC1859 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70C6B9801ADE0C8400CC1859 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70C6B9871ADE0C8400CC1859;
-			remoteInfo = RCIM;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		70202E6520200C95001E73DD /* release_notes_ios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes_ios.txt; sourceTree = "<group>"; };
@@ -216,7 +204,6 @@
 		70C6B9961ADE0C8400CC1859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70C6B9981ADE0C8400CC1859 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70C6B99B1ADE0C8400CC1859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		70C6B9A11ADE0C8500CC1859 /* RCIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C6B9A61ADE0C8500CC1859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70C6B9A71ADE0C8500CC1859 /* RCIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCIMTests.m; sourceTree = "<group>"; };
 		70C6B9B21ADE0D1300CC1859 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -303,13 +290,6 @@
 				70C6B9D91ADE0D1300CC1859 /* QuartzCore.framework in Frameworks */,
 				70C6B9DA1ADE0D1300CC1859 /* SystemConfiguration.framework in Frameworks */,
 				70C6B9DB1ADE0D1300CC1859 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70C6B99E1ADE0C8500CC1859 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +479,6 @@
 			isa = PBXGroup;
 			children = (
 				70C6B9881ADE0C8400CC1859 /* RCIM.app */,
-				70C6B9A11ADE0C8500CC1859 /* RCIMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -686,52 +665,29 @@
 			productReference = 70C6B9881ADE0C8400CC1859 /* RCIM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		70C6B9A01ADE0C8500CC1859 /* RCIMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 70C6B9AE1ADE0C8500CC1859 /* Build configuration list for PBXNativeTarget "RCIMTests" */;
-			buildPhases = (
-				70C6B99D1ADE0C8500CC1859 /* Sources */,
-				70C6B99E1ADE0C8500CC1859 /* Frameworks */,
-				70C6B99F1ADE0C8500CC1859 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				70C6B9A31ADE0C8500CC1859 /* PBXTargetDependency */,
-			);
-			name = RCIMTests;
-			productName = RCIMTests;
-			productReference = 70C6B9A11ADE0C8500CC1859 /* RCIMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		70C6B9801ADE0C8400CC1859 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "郑文明";
 				TargetAttributes = {
 					70C6B9871ADE0C8400CC1859 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 7D992WX2BB;
+						DevelopmentTeam = 58RLM4UFK5;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
 						};
 					};
-					70C6B9A01ADE0C8500CC1859 = {
-						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 7D992WX2BB;
-						TestTargetID = 70C6B9871ADE0C8400CC1859;
-					};
 				};
 			};
 			buildConfigurationList = 70C6B9831ADE0C8400CC1859 /* Build configuration list for PBXProject "RCIM" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -744,7 +700,6 @@
 			projectRoot = "";
 			targets = (
 				70C6B9871ADE0C8400CC1859 /* RCIM */,
-				70C6B9A01ADE0C8500CC1859 /* RCIMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -774,7 +729,6 @@
 				70CA66AA1C43B7A6003D9FF9 /* tab3_unselected@3x.png in Resources */,
 				70CA66A61C43B7A6003D9FF9 /* tab2_unselected@3x.png in Resources */,
 				70CA66A91C43B7A6003D9FF9 /* tab3_unselected@2x.png in Resources */,
-				70202E7A20200DD7001E73DD /* Info.plist in Resources */,
 				707AFFA51C4629E600EDBD52 /* MBProgressHUD.bundle in Resources */,
 				70AD71C71C48C76900F3D493 /* DiscussionViewController.xib in Resources */,
 				70202E7320200C96001E73DD /* RCConfig.plist in Resources */,
@@ -796,13 +750,6 @@
 				70CA66A51C43B7A6003D9FF9 /* tab2_unselected@2x.png in Resources */,
 				70CA66A71C43B7A6003D9FF9 /* tab3_selected@2x.png in Resources */,
 				70CA66A31C43B7A6003D9FF9 /* tab2_selected@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70C6B99F1ADE0C8500CC1859 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,23 +801,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70C6B99D1ADE0C8500CC1859 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70C6B9A81ADE0C8500CC1859 /* RCIMTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		70C6B9A31ADE0C8500CC1859 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 70C6B9871ADE0C8400CC1859 /* RCIM */;
-			targetProxy = 70C6B9A21ADE0C8500CC1859 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		70202E6C20200C95001E73DD /* RongCloudKit.strings */ = {
@@ -905,23 +836,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -937,7 +880,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -948,17 +891,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -974,7 +928,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -985,7 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7D992WX2BB;
+				DEVELOPMENT_TEAM = 58RLM4UFK5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
@@ -993,7 +947,7 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMKit",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1002,6 +956,7 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.ihk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1011,7 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7D992WX2BB;
+				DEVELOPMENT_TEAM = 58RLM4UFK5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
@@ -1019,7 +974,7 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMKit",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1028,52 +983,9 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.ihk.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		70C6B9AF1ADE0C8500CC1859 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7D992WX2BB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RCIMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iOS_IMKit",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCIM.app/RCIM";
-			};
-			name = Debug;
-		};
-		70C6B9B01ADE0C8500CC1859 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7D992WX2BB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RCIMTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iOS_IMKit",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCIM.app/RCIM";
 			};
 			name = Release;
 		};
@@ -1094,15 +1006,6 @@
 			buildConfigurations = (
 				70C6B9AC1ADE0C8500CC1859 /* Debug */,
 				70C6B9AD1ADE0C8500CC1859 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		70C6B9AE1ADE0C8500CC1859 /* Build configuration list for PBXNativeTarget "RCIMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				70C6B9AF1ADE0C8500CC1859 /* Debug */,
-				70C6B9B01ADE0C8500CC1859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

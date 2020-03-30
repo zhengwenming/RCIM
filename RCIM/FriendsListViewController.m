@@ -1,8 +1,3 @@
-
-
-
-
-
 //
 //  FriendsListViewController.m
 //  RCIM
@@ -39,8 +34,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     friendsArray = [AppDelegate shareAppDelegate].friendsArray;
-    
-    
     [self.table registerNib:[UINib nibWithNibName:@"FriendCell" bundle:nil] forCellReuseIdentifier:@"FriendCell"];
     self.table.tableFooterView = [UIView new];
 }

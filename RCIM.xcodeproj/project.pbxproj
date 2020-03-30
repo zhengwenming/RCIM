@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70202E7120200C96001E73DD /* release_notes_ios.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6520200C95001E73DD /* release_notes_ios.txt */; };
-		70202E7220200C96001E73DD /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70202E6720200C95001E73DD /* libopencore-amrnb.a */; };
-		70202E7320200C96001E73DD /* RCConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6820200C95001E73DD /* RCConfig.plist */; };
-		70202E7420200C96001E73DD /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70202E6920200C95001E73DD /* RongIMLib.framework */; };
-		70202E7520200C96001E73DD /* Emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6B20200C95001E73DD /* Emoji.plist */; };
-		70202E7620200C96001E73DD /* RongCloudKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6C20200C95001E73DD /* RongCloudKit.strings */; };
-		70202E7720200C96001E73DD /* RongCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70202E6E20200C96001E73DD /* RongCloud.bundle */; };
-		70202E7820200C96001E73DD /* RongIMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70202E6F20200C96001E73DD /* RongIMKit.framework */; };
 		707AFFA41C4629E600EDBD52 /* MBProgressHUD+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AFF9F1C4629E600EDBD52 /* MBProgressHUD+Show.m */; };
 		707AFFA51C4629E600EDBD52 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 707AFFA01C4629E600EDBD52 /* MBProgressHUD.bundle */; };
 		707AFFA61C4629E600EDBD52 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AFFA21C4629E600EDBD52 /* MBProgressHUD.m */; };
@@ -107,21 +99,23 @@
 		70CA66AD1C43B7A6003D9FF9 /* tab4_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CA66961C43B7A6003D9FF9 /* tab4_unselected@2x.png */; };
 		70CA66AE1C43B7A6003D9FF9 /* tab4_unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CA66971C43B7A6003D9FF9 /* tab4_unselected@3x.png */; };
 		70CA66B11C43B7DD003D9FF9 /* DiscussionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CA66B01C43B7DD003D9FF9 /* DiscussionViewController.m */; };
+		70D6FE8024319F54005C3727 /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6FE7224319F54005C3727 /* RongIMLib.framework */; };
+		70D6FE8124319F54005C3727 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6FE7324319F54005C3727 /* libopencore-amrwb.a */; };
+		70D6FE8224319F54005C3727 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6FE7424319F54005C3727 /* libopencore-amrnb.a */; };
+		70D6FE8324319F54005C3727 /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6FE7524319F54005C3727 /* libvo-amrwbenc.a */; };
+		70D6FE8424319F54005C3727 /* RCConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7624319F54005C3727 /* RCConfig.plist */; };
+		70D6FE8524319F54005C3727 /* release_notes_ios.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7724319F54005C3727 /* release_notes_ios.txt */; };
+		70D6FE8624319F54005C3727 /* RCColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7924319F54005C3727 /* RCColor.plist */; };
+		70D6FE8724319F54005C3727 /* RongCloudKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7A24319F54005C3727 /* RongCloudKit.strings */; };
+		70D6FE8824319F54005C3727 /* RongIMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6FE7D24319F54005C3727 /* RongIMKit.framework */; };
+		70D6FE8924319F54005C3727 /* Emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7E24319F54005C3727 /* Emoji.plist */; };
+		70D6FE8A24319F54005C3727 /* RongCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70D6FE7F24319F54005C3727 /* RongCloud.bundle */; };
 		70E0B5BD1CC766AE004A2975 /* WMVideoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0B5BC1CC766AE004A2975 /* WMVideoMessage.m */; };
 		70E0B5C01CC766D7004A2975 /* WMVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E0B5BF1CC766D7004A2975 /* WMVideoMessageCell.m */; };
 		70E0B5C21CC769DC004A2975 /* add_ico@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E0B5C11CC769DC004A2975 /* add_ico@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70202E6520200C95001E73DD /* release_notes_ios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes_ios.txt; sourceTree = "<group>"; };
-		70202E6720200C95001E73DD /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		70202E6820200C95001E73DD /* RCConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RCConfig.plist; sourceTree = "<group>"; };
-		70202E6920200C95001E73DD /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMLib.framework; sourceTree = "<group>"; };
-		70202E6B20200C95001E73DD /* Emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emoji.plist; sourceTree = "<group>"; };
-		70202E6D20200C96001E73DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RongCloudKit.strings; sourceTree = "<group>"; };
-		70202E6E20200C96001E73DD /* RongCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RongCloud.bundle; sourceTree = "<group>"; };
-		70202E6F20200C96001E73DD /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMKit.framework; sourceTree = "<group>"; };
-		70202E7020200C96001E73DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RongCloudKit.strings"; sourceTree = "<group>"; };
 		70202E7920200DD6001E73DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707AFF9E1C4629E600EDBD52 /* MBProgressHUD+Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Show.h"; sourceTree = "<group>"; };
 		707AFF9F1C4629E600EDBD52 /* MBProgressHUD+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Show.m"; sourceTree = "<group>"; };
@@ -254,6 +248,18 @@
 		70CA66971C43B7A6003D9FF9 /* tab4_unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab4_unselected@3x.png"; sourceTree = "<group>"; };
 		70CA66AF1C43B7DD003D9FF9 /* DiscussionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussionViewController.h; sourceTree = "<group>"; };
 		70CA66B01C43B7DD003D9FF9 /* DiscussionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussionViewController.m; sourceTree = "<group>"; };
+		70D6FE7224319F54005C3727 /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMLib.framework; sourceTree = "<group>"; };
+		70D6FE7324319F54005C3727 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		70D6FE7424319F54005C3727 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		70D6FE7524319F54005C3727 /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		70D6FE7624319F54005C3727 /* RCConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RCConfig.plist; sourceTree = "<group>"; };
+		70D6FE7724319F54005C3727 /* release_notes_ios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes_ios.txt; sourceTree = "<group>"; };
+		70D6FE7924319F54005C3727 /* RCColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RCColor.plist; sourceTree = "<group>"; };
+		70D6FE7B24319F54005C3727 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RongCloudKit.strings"; sourceTree = "<group>"; };
+		70D6FE7C24319F54005C3727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RongCloudKit.strings; sourceTree = "<group>"; };
+		70D6FE7D24319F54005C3727 /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RongIMKit.framework; sourceTree = "<group>"; };
+		70D6FE7E24319F54005C3727 /* Emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emoji.plist; sourceTree = "<group>"; };
+		70D6FE7F24319F54005C3727 /* RongCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RongCloud.bundle; sourceTree = "<group>"; };
 		70E0B5BB1CC766AE004A2975 /* WMVideoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessage.h; sourceTree = "<group>"; };
 		70E0B5BC1CC766AE004A2975 /* WMVideoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoMessage.m; sourceTree = "<group>"; };
 		70E0B5BE1CC766D7004A2975 /* WMVideoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessageCell.h; sourceTree = "<group>"; };
@@ -267,24 +273,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C6B9C71ADE0D1300CC1859 /* AudioToolbox.framework in Frameworks */,
+				70D6FE8224319F54005C3727 /* libopencore-amrnb.a in Frameworks */,
 				70C6B9C81ADE0D1300CC1859 /* AVFoundation.framework in Frameworks */,
 				70C6B9C91ADE0D1300CC1859 /* CFNetwork.framework in Frameworks */,
+				70D6FE8324319F54005C3727 /* libvo-amrwbenc.a in Frameworks */,
 				70C6B9CA1ADE0D1300CC1859 /* CoreAudio.framework in Frameworks */,
 				70C6B9CB1ADE0D1300CC1859 /* CoreGraphics.framework in Frameworks */,
 				70C6B9CC1ADE0D1300CC1859 /* CoreImage.framework in Frameworks */,
+				70D6FE8024319F54005C3727 /* RongIMLib.framework in Frameworks */,
 				70C6B9CD1ADE0D1300CC1859 /* CoreLocation.framework in Frameworks */,
 				70C6B9CE1ADE0D1300CC1859 /* CoreMedia.framework in Frameworks */,
+				70D6FE8824319F54005C3727 /* RongIMKit.framework in Frameworks */,
 				70C6B9CF1ADE0D1300CC1859 /* CoreTelephony.framework in Frameworks */,
 				70C6B9D01ADE0D1300CC1859 /* CoreVideo.framework in Frameworks */,
 				70C6B9D11ADE0D1300CC1859 /* Foundation.framework in Frameworks */,
-				70202E7820200C96001E73DD /* RongIMKit.framework in Frameworks */,
-				70202E7220200C96001E73DD /* libopencore-amrnb.a in Frameworks */,
 				70C6B9D21ADE0D1300CC1859 /* libc++.dylib in Frameworks */,
 				70C6B9D31ADE0D1300CC1859 /* libsqlite3.dylib in Frameworks */,
 				70C6B9D41ADE0D1300CC1859 /* libstdc++.dylib in Frameworks */,
 				70C6B9D51ADE0D1300CC1859 /* libxml2.dylib in Frameworks */,
+				70D6FE8124319F54005C3727 /* libopencore-amrwb.a in Frameworks */,
 				70C6B9D61ADE0D1300CC1859 /* libz.dylib in Frameworks */,
-				70202E7420200C96001E73DD /* RongIMLib.framework in Frameworks */,
 				70C6B9D71ADE0D1300CC1859 /* MapKit.framework in Frameworks */,
 				70C6B9D81ADE0D1300CC1859 /* OpenGLES.framework in Frameworks */,
 				70C6B9D91ADE0D1300CC1859 /* QuartzCore.framework in Frameworks */,
@@ -296,27 +304,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		70202E6620200C95001E73DD /* IMLib */ = {
-			isa = PBXGroup;
-			children = (
-				70202E6720200C95001E73DD /* libopencore-amrnb.a */,
-				70202E6820200C95001E73DD /* RCConfig.plist */,
-				70202E6920200C95001E73DD /* RongIMLib.framework */,
-			);
-			path = IMLib;
-			sourceTree = "<group>";
-		};
-		70202E6A20200C95001E73DD /* IMKit */ = {
-			isa = PBXGroup;
-			children = (
-				70202E6B20200C95001E73DD /* Emoji.plist */,
-				70202E6C20200C95001E73DD /* RongCloudKit.strings */,
-				70202E6E20200C96001E73DD /* RongCloud.bundle */,
-				70202E6F20200C96001E73DD /* RongIMKit.framework */,
-			);
-			path = IMKit;
-			sourceTree = "<group>";
-		};
 		707AFF9D1C4629E600EDBD52 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,16 +323,6 @@
 				707AFFA81C462A0000EDBD52 /* WMUtil.m */,
 			);
 			path = WMUtil;
-			sourceTree = "<group>";
-		};
-		707D760D1C321EB7000D8E8E /* RongCloudSDK_2_8_27 */ = {
-			isa = PBXGroup;
-			children = (
-				70202E6A20200C95001E73DD /* IMKit */,
-				70202E6620200C95001E73DD /* IMLib */,
-				70202E6520200C95001E73DD /* release_notes_ios.txt */,
-			);
-			path = RongCloudSDK_2_8_27;
 			sourceTree = "<group>";
 		};
 		7083ED4D1C3368D20016D355 /* RCConversation会话 */ = {
@@ -514,7 +491,7 @@
 				70C6B9981ADE0C8400CC1859 /* Images.xcassets */,
 				70C6B99A1ADE0C8400CC1859 /* LaunchScreen.xib */,
 				7083ED871C33B0E60016D355 /* ThirdLib */,
-				707D760D1C321EB7000D8E8E /* RongCloudSDK_2_8_27 */,
+				70D6FE7024319F54005C3727 /* RongCloudSDK_2_10_4 */,
 				70C6B98B1ADE0C8400CC1859 /* Supporting Files */,
 			);
 			path = RCIM;
@@ -645,6 +622,40 @@
 			path = TabarIcons;
 			sourceTree = "<group>";
 		};
+		70D6FE7024319F54005C3727 /* RongCloudSDK_2_10_4 */ = {
+			isa = PBXGroup;
+			children = (
+				70D6FE7124319F54005C3727 /* IMLib */,
+				70D6FE7724319F54005C3727 /* release_notes_ios.txt */,
+				70D6FE7824319F54005C3727 /* IMKit */,
+			);
+			path = RongCloudSDK_2_10_4;
+			sourceTree = "<group>";
+		};
+		70D6FE7124319F54005C3727 /* IMLib */ = {
+			isa = PBXGroup;
+			children = (
+				70D6FE7224319F54005C3727 /* RongIMLib.framework */,
+				70D6FE7324319F54005C3727 /* libopencore-amrwb.a */,
+				70D6FE7424319F54005C3727 /* libopencore-amrnb.a */,
+				70D6FE7524319F54005C3727 /* libvo-amrwbenc.a */,
+				70D6FE7624319F54005C3727 /* RCConfig.plist */,
+			);
+			path = IMLib;
+			sourceTree = "<group>";
+		};
+		70D6FE7824319F54005C3727 /* IMKit */ = {
+			isa = PBXGroup;
+			children = (
+				70D6FE7924319F54005C3727 /* RCColor.plist */,
+				70D6FE7A24319F54005C3727 /* RongCloudKit.strings */,
+				70D6FE7D24319F54005C3727 /* RongIMKit.framework */,
+				70D6FE7E24319F54005C3727 /* Emoji.plist */,
+				70D6FE7F24319F54005C3727 /* RongCloud.bundle */,
+			);
+			path = IMKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -713,7 +724,6 @@
 				7083ED7A1C337ACB0016D355 /* LoginViewController.xib in Resources */,
 				70CA66A01C43B7A6003D9FF9 /* tab1_selected@3x.png in Resources */,
 				70CA66AB1C43B7A6003D9FF9 /* tab4_selected@2x.png in Resources */,
-				70202E7120200C96001E73DD /* release_notes_ios.txt in Resources */,
 				70AD71C51C48BB5600F3D493 /* GroupListViewController.xib in Resources */,
 				70AD71BE1C48B61200F3D493 /* FriendsListViewController.xib in Resources */,
 				70CA66981C43B7A6003D9FF9 /* DefaultHeader@2x.png in Resources */,
@@ -721,29 +731,31 @@
 				70CA66A41C43B7A6003D9FF9 /* tab2_selected@3x.png in Resources */,
 				70E0B5C21CC769DC004A2975 /* add_ico@3x.png in Resources */,
 				70C6B9971ADE0C8400CC1859 /* Main.storyboard in Resources */,
-				70202E7720200C96001E73DD /* RongCloud.bundle in Resources */,
 				70CA669F1C43B7A6003D9FF9 /* tab1_selected@2x.png in Resources */,
 				70CA66A81C43B7A6003D9FF9 /* tab3_selected@3x.png in Resources */,
+				70D6FE8624319F54005C3727 /* RCColor.plist in Resources */,
 				70CA66AE1C43B7A6003D9FF9 /* tab4_unselected@3x.png in Resources */,
 				70A0785C1C609E8500F8C188 /* RCIM.gif in Resources */,
+				70D6FE8424319F54005C3727 /* RCConfig.plist in Resources */,
 				70CA66AA1C43B7A6003D9FF9 /* tab3_unselected@3x.png in Resources */,
 				70CA66A61C43B7A6003D9FF9 /* tab2_unselected@3x.png in Resources */,
 				70CA66A91C43B7A6003D9FF9 /* tab3_unselected@2x.png in Resources */,
 				707AFFA51C4629E600EDBD52 /* MBProgressHUD.bundle in Resources */,
 				70AD71C71C48C76900F3D493 /* DiscussionViewController.xib in Resources */,
-				70202E7320200C96001E73DD /* RCConfig.plist in Resources */,
 				70CA66AD1C43B7A6003D9FF9 /* tab4_unselected@2x.png in Resources */,
 				70AD71C31C48B88700F3D493 /* PersonCenterViewController.xib in Resources */,
 				70CA669E1C43B7A6003D9FF9 /* tab0_unselected@3x.png in Resources */,
+				70D6FE8924319F54005C3727 /* Emoji.plist in Resources */,
 				70CA66AC1C43B7A6003D9FF9 /* tab4_selected@3x.png in Resources */,
 				70C6B99C1ADE0C8400CC1859 /* LaunchScreen.xib in Resources */,
-				70202E7520200C96001E73DD /* Emoji.plist in Resources */,
+				70D6FE8524319F54005C3727 /* release_notes_ios.txt in Resources */,
 				70CA669C1C43B7A6003D9FF9 /* tab0_selected@3x.png in Resources */,
 				70CA66A21C43B7A6003D9FF9 /* tab1_unselected@3x.png in Resources */,
 				70CA66A11C43B7A6003D9FF9 /* tab1_unselected@2x.png in Resources */,
 				7083EDB31C33B0E60016D355 /* PPDragDropBadgeView.bundle in Resources */,
 				7083ED861C33ADCF0016D355 /* FriendCell.xib in Resources */,
-				70202E7620200C96001E73DD /* RongCloudKit.strings in Resources */,
+				70D6FE8724319F54005C3727 /* RongCloudKit.strings in Resources */,
+				70D6FE8A24319F54005C3727 /* RongCloud.bundle in Resources */,
 				70C6B9991ADE0C8400CC1859 /* Images.xcassets in Resources */,
 				70CA669B1C43B7A6003D9FF9 /* tab0_selected@2x.png in Resources */,
 				70CA669D1C43B7A6003D9FF9 /* tab0_unselected@2x.png in Resources */,
@@ -804,15 +816,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70202E6C20200C95001E73DD /* RongCloudKit.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70202E6D20200C96001E73DD /* en */,
-				70202E7020200C96001E73DD /* zh-Hans */,
-			);
-			name = RongCloudKit.strings;
-			sourceTree = "<group>";
-		};
 		70C6B9951ADE0C8400CC1859 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -827,6 +830,15 @@
 				70C6B99B1ADE0C8400CC1859 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		70D6FE7A24319F54005C3727 /* RongCloudKit.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D6FE7B24319F54005C3727 /* zh-Hans */,
+				70D6FE7C24319F54005C3727 /* en */,
+			);
+			name = RongCloudKit.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -945,6 +957,8 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMKit",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMLib",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMKit",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -954,6 +968,7 @@
 					"$(PROJECT_DIR)/iOS_IMKit",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "come.ihk.$(PRODUCT_NAME:rfc1034identifier)";
@@ -972,6 +987,8 @@
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMKit",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMLib",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMKit",
 				);
 				INFOPLIST_FILE = RCIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -981,6 +998,7 @@
 					"$(PROJECT_DIR)/iOS_IMKit",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27",
 					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_8_27/IMLib",
+					"$(PROJECT_DIR)/RCIM/RongCloudSDK_2_10_4/IMLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "come.ihk.$(PRODUCT_NAME:rfc1034identifier)";

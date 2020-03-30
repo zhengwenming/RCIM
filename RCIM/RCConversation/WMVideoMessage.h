@@ -7,7 +7,7 @@
 //
 
 #import <RongIMLib/RongIMLib.h>
-#import <RongIMLib/RCMessageContentView.h>
+
 #define RCLocalMessageTypeIdentifier @”RC:SimpleMsg”
 @interface WMVideoMessage : RCMessageContent<NSCoding,RCMessageContentView>
 @property(nonatomic,strong)NSString *content;
